@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Implementation-Title: Login Service Application
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: ordilei.souza
+Implementation-Vendor-Id: io.dropwizard
+Build-Jdk: 1.8.0_74
+Created-By: Maven Integration for Eclipse
+

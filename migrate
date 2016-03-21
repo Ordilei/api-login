@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "Running Migration Status=1 Dump=2 Tag=3 Migrate=4 "
+read NUM
+
+case $NUM in
+	1) java -jar target/api-login-1.0.0-SNAPSHOT.jar db status dbconfig.yml;;
+	2) java -jar target/api-login-1.0.0-SNAPSHOT.jar db dump dbconfig.yml;;
+	3) java -jar target/api-login-1.0.0-SNAPSHOT.jar db tag dbconfig.yml $ date +"%m-%d-%y"-dump;;
+	4) java -jar target/api-login-1.0.0-SNAPSHOT.jar db migrate dbconfig.yml;;
+	*) echo "INVALID NUMBER!" ;;
+esac
